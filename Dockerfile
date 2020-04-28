@@ -2,11 +2,9 @@ FROM ubuntu:18.04
 
 # Set opencv version, default currently latest (explicitly numbered)
 ARG OPENCV_RELEASE=4.3.0
-
 # Version specific opencv build flags, https://github.com/opencv/opencv/blob/4.3.0/CMakeLists.txt & module disables
 # Optionally set them as "-D BUILD_OPTION=ON -D BUILD_opencv_module=OFF"
 ARG ADDITIONAL_BUILD_FLAGS
-
 # Optionally set to any value (1, "true", anything but emptystring) to enable GUI features
 ARG ENABLE_IMSHOW_AND_WAITKEY
 
